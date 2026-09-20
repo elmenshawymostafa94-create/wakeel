@@ -28,7 +28,7 @@ function md(src) {
   }
   flush(); return out.join("\n");
 }
-const shell = (p, inner, canon) => `<!doctype html><html lang="${p.lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(p.title)}</title><meta name="description" content="${esc(p.description)}"><link rel="canonical" href="${canon}"><link rel="stylesheet" href="${base}/style.css"></head><body><main${p.lang === "ar" ? ' class="ar"' : ""}><nav><a href="${base}/">Home</a><a href="${base}/blog/">Notes</a></nav>${inner}</main></body></html>\n`;
+const shell = (p, inner, canon) => `<!doctype html><html lang="${p.lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(p.title)}</title><meta name="description" content="${esc(p.description)}"><link rel="canonical" href="${canon}"><link rel="stylesheet" href="${base}/style.css"></head><body><main${p.lang === "ar" ? ' class="ar"' : ""}><nav><a href="${base}/">Wakeel</a><a href="${base}/blog/">Notes</a></nav>${inner}</main></body></html>\n`;
 fs.mkdirSync("blog", { recursive: true });
 for (const p of posts) {
   fs.mkdirSync(path.join("blog", p.slug), { recursive: true });
