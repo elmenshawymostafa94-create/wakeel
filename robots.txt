@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elmenshawymostafa94-create.github.io/wakeel/sitemap.xml

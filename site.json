@@ -1,0 +1,9 @@
+{
+  "name": "Wakeel",
+  "base_url": "https://elmenshawymostafa94-create.github.io/wakeel",
+  "country": "Egypt",
+  "languages": ["en", "ar"],
+  "posts_dir": "posts",
+  "build": "node build.mjs",
+  "branch": "main"
+}
